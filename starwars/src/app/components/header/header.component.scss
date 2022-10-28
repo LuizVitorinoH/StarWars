@@ -1,0 +1,18 @@
+@import '~scss/variables';
+@import '~scss/mixins';
+
+.header {
+  flex-direction: row;
+  position: fixed;
+  left: 0;
+  top: 2;
+  width: 100%;
+  margin-bottom: 15px;
+  text-align: end;
+}
+
+.img-header{
+  width: 20%;
+}
+
+///////////

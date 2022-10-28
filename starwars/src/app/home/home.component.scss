@@ -1,0 +1,131 @@
+
+@import '~scss/variables';
+@import '~scss/mixins';
+.mat-dialog { transition: none; }
+.header {
+  position: fixed;
+  left: 0;
+  top: 18%;
+  width: 100%;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+$carousel-width: 90%;
+$carousel-height: 300px;
+
+.wrap {
+  position: relative;
+  width: $carousel-width;
+  height: 300px;
+  margin: 0 auto;
+  box-shadow:7px 7px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.window {
+  overflow: hidden;
+  position: relative;
+}
+
+#carousel {
+  width: 10000px;
+  position: relative;
+  top: 0;
+}
+
+.slide {
+  height: 410px;
+  width: 250px;
+  cursor: pointer;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  justify-content: end;
+  font-weight: bold;
+  background-size: 250px 350px;
+}
+
+.slide#b1 { background-image: url("../../assets/img/movie_posters/episode_5.jpg"); }
+.slide#b2 { background-image: url("../../assets/img/movie_posters/episode_6.jpg");}
+.slide#b3 {background-image: url("../../assets/img/movie_posters/episode_1.jpg"); }
+.slide#b4 { background-image: url("../../assets/img/movie_posters/episode_2.webp");}
+.slide#b5 { background-image: url("../../assets/img/movie_posters/episode_3.jpg") }
+.slide#b6 { background-image: url("../../assets/img/movie_posters/episode_4.webp")}
+
+#prev, #next {
+  cursor: pointer;
+  position: absolute;
+  bottom: 35%;
+  font-size: 14pt;
+}
+
+#prev { left: -40px }
+#next { right: -40px }
+
+.transition {
+ transition: .7s;
+ }
+
+ .wrap-character {
+  position: relative;
+  width: $carousel-width;
+  height: 300px;
+  margin: 0 auto;
+  box-shadow:7px 7px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.window-character {
+  overflow: hidden;
+  position: relative;
+}
+
+#carousel-character {
+  width: 10000px;
+  position: relative;
+  top: 0;
+}
+
+.slide-character {
+  height: 200px;
+  width: 250px;
+  cursor: pointer;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content:  end;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-weight: bold;
+  background-size: 250px 140px ;
+}
+
+.slide-character#b1 { background-image: url("../../assets/img/characters/character6.jpg"); }
+.slide-character#b2 { background-image: url("../../assets/img/characters/character5.jpg");}
+.slide-character#b3 { background-image: url("../../assets/img/characters/character3.jpg"); }
+.slide-character#b4 { background-image: url("../../assets/img/characters/character7.jpg");}
+.slide-character#b5 { background-image: url("../../assets/img/characters/character10.jpg"); }
+.slide-character#b6 { background-image: url("../../assets/img/characters/character1.jpg");}
+.slide-character#b8 { background-image: url("../../assets/img/characters/character8.jpeg");}
+.slide-character#b9 { background-image: url("../../assets/img/characters/character4.jpg"); }
+.slide-character#b10 { background-image: url("../../assets/img/characters/character2.jpg");}
+.slide-character#b7 { background-image: url("../../assets/img/characters/character9.jpg");}
+
+#prev-character, #next-character {
+  cursor: pointer;
+  position: absolute;
+  bottom: 70%;
+  font-size: 14pt;
+}
+
+#prev-character { left: -40px }
+#next-character { right: -40px }
+
+.transition-character {
+ transition: .7s;
+ }
+
+ ////
+ 

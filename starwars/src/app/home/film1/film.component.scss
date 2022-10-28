@@ -1,0 +1,28 @@
+@media (max-width: 769px) {
+    .linha {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item-linha {
+        width: 100% !important;
+    }
+}
+.mat-dialog { transition: none; }
+section{
+    background-color: aliceblue;
+}
+
+.infos h3 {
+    font-weight: bold;
+}
+
+.linha {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.item-linha {
+    width: 25%;
+}

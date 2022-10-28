@@ -1,0 +1,44 @@
+<sw-loading class="section--align-center" *ngIf="loading"></sw-loading>
+<sw-header></sw-header>
+<section class="header" *ngIf="!loading">
+<section>
+  <br/><br/><br/><br/>
+    <h1>MOVIES</h1>
+    <br/>
+<div class="wrap">
+  <div class="window">
+    <div id="carousel" #carousel
+      [ngStyle]="carouselStyle()">
+      <span
+        *ngFor="let slide of slides;trackBy: trackByFn"
+        class="slide" [id]="'b'+ slide.id" (click)="openDialog(slide)">{{slide.title}}<br/>{{slide.director}}<br/>{{slide.release_date}}</span>
+        
+    </div>
+    
+  </div>
+  
+  <span id="prev" (click)="nextSlide()"><img src="../../assets/img/esquerda.png" width="35px" alt=""></span>
+  <span id="next" (click)="prevSlide()"><img src="../../assets/img/direita.png" width="35px"></span>
+</div>
+
+</section>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<section>
+  <h1>CHARACTERS</h1>
+  <br/>
+<div class="wrap-character">
+<div class="window-character">
+  <div id="carousel-character" #carousel
+    [ngStyle]="carouselStyleCharacter()">
+    <span
+      *ngFor="let slide of slidescharacters;trackBy: trackByFnCharacter"
+      class="slide-character" [id]="'b'+ slide.id">{{slide.name}}<br/>{{slide.birth_year}}<br/>{{slide.height}}</span>
+  </div>
+</div>
+<span id="prev-character" (click)="nextSlideCharacter()"><img src="../../assets/img/esquerda.png" width="35px" alt=""></span>
+<span id="next-character" (click)="prevSlideCharacter()"><img src="../../assets/img/direita.png" width="35px"></span>
+</div>
+</section>
+</section>
+
+<sw-footer></sw-footer>
